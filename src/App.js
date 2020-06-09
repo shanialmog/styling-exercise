@@ -1,10 +1,24 @@
 import React from 'react'
+import Styled, { ThemeProvider } from 'styled-components'
 
-function App() {
+// import About from './components/About'
+// import Contact from './components/Contact'
+import theme from './components/theme'
+
+const App = () => {
+
+  const Button = Styled.button`
+    font-size: ${({theme}) => theme.fontSizes.large};
+    color: ${({theme}) => theme .colors.main};
+    border: none;
+  `
   return (
-    <div>
-      <h1>Hellooooo</h1>
-    </div>
+    <ThemeProvider theme = {theme}>
+      <h1>Practicing styled components</h1>
+      <Button>I'm themed!</Button>
+      {/* <About />
+      <Contact /> */}
+    </ThemeProvider>
   )
 }
 
