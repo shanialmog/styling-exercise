@@ -1,9 +1,11 @@
 import React from 'react'
 
+import H1 from '../H1'
+
 const Contact = () => {
   return (
     <div>
-      <h1>Contact page</h1>
+      <H1>Contact page</H1>
     </div>
   )
 }

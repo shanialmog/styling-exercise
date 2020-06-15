@@ -10,5 +10,8 @@ export default {
         large: '3rem',
         medium: '2rem',
         p: '1.5rem'
+    },
+    align: {
+        center: 'center'
     }
 }

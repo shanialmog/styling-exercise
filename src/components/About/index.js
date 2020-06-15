@@ -1,9 +1,11 @@
 import React from 'react'
 
+import H1 from '../H1'
+
 const About = () => {
   return (
     <div>
-      <h1>The about page</h1>
+      <H1>The about page</H1>
     </div>
   )
 }
