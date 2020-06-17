@@ -4,8 +4,6 @@ import Styled from 'styled-components'
 
 // import Button from '../Button'
 
-
-const NavBar = () => {
     const NavButton = Styled.button`
     font-size: 1rem;
     padding: .5rem 1rem;
@@ -19,6 +17,8 @@ const NavBar = () => {
     }
     border-radius: 3px;
     `
+
+const NavBar = () => {
     return (
         <div>
             <Link to="/"><NavButton>Home</NavButton ></Link>

@@ -14,6 +14,7 @@ const StyledButton = Styled.button`
     :active {
         background-color: #e1e1e1;
     }
+
 `
 
 const Button = ({children}) => {

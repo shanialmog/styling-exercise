@@ -9,6 +9,10 @@ import NavBar from './components/NavBar'
 import theme from './theme/theme'
 import GlobalStyles from './theme/globalStyles'
 
+const Container = Styled.div`
+    text-align: center;
+    padding: 10px 10px;
+  `
 const App = () => {
 
   // const Button = Styled.button`
@@ -16,11 +20,6 @@ const App = () => {
   //   color: ${({ theme }) => theme.colors.main};
   //   border: none;
   // `
-  const Container = Styled.div`
-    text-align: center;
-  `
-
-
   return (
     <Router>
       <ThemeProvider theme={theme}>
@@ -30,12 +29,12 @@ const App = () => {
           {/* <About />
       <Contact /> */}
         </Container>
+        <Switch>
+          <Route path='/' exact component={Home} />
+          <Route path='/contact' exact component={Contact} />
+          <Route path='/about' exact component={About} />
+        </Switch>
       </ThemeProvider>
-      <Switch>
-        <Route path='/' exact component={Home} />
-        <Route path='/contact' exact component={Contact} />
-        <Route path='/about' exact component={About} />
-      </Switch>
     </Router>
   )
 }

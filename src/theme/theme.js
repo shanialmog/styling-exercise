@@ -4,7 +4,8 @@ export default {
         dark: '#ddd222',
         light: '#efefef',
         text: '#ddd',
-        link: '#fafafa'
+        link: '#fafafa',
+        bold: '#581845'
     },
     fontSizes: {
         large: '3rem',
@@ -13,5 +14,8 @@ export default {
     },
     align: {
         center: 'center'
+    },
+    padding: {
+        default: '10px'
     }
 }

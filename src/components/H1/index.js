@@ -2,16 +2,16 @@ import React from 'react'
 import Styled from 'styled-components'
 
 
+const StyledH1 = Styled.h1`
+text-align: center
+}
+`
 
 const H1 = ({ children }) => {
-    const H1 = Styled.h1`
-    text-align: center
-    }
-`
     return (
-        <H1 >
+        <StyledH1 >
             {children}
-        </H1>
+        </StyledH1>
     )
 }
 
