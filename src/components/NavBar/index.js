@@ -22,8 +22,8 @@ const NavBar = () => {
     return (
         <div>
             <Link to="/"><NavButton>Home</NavButton ></Link>
-            <Link to="/contact"><NavButton>Events</NavButton ></Link>
             <Link to="/about"><NavButton>About</NavButton ></Link>
+            <Link to="/contact"><NavButton>Contact</NavButton ></Link>
         </div>
     )
 }

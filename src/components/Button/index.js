@@ -17,9 +17,11 @@ const StyledButton = Styled.button`
 
 `
 
-const Button = ({children}) => {
+const Button = ({ children, className }) => {
     return (
-        <StyledButton >
+        <StyledButton
+            className={className}
+        >
             {children}
         </StyledButton>
     )

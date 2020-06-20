@@ -10,7 +10,8 @@ export default {
     fontSizes: {
         large: '3rem',
         medium: '2rem',
-        p: '1.5rem'
+        h2: '1.4rem',
+        p: '1.2rem'
     },
     align: {
         center: 'center'
