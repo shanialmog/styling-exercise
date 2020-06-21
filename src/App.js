@@ -11,7 +11,9 @@ import GlobalStyles from './theme/globalStyles'
 
 const Container = Styled.div`
     text-align: center;
-    padding: 10px 10px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 600px;
   `
 const App = () => {
 
@@ -23,17 +25,15 @@ const App = () => {
   return (
     <Router>
       <ThemeProvider theme={theme}>
+        <NavBar />
         <Container>
           <GlobalStyles />
-          <NavBar />
-          {/* <About />
-      <Contact /> */}
+          <Switch>
+            <Route path='/' exact component={Home} />
+            <Route path='/contact' exact component={Contact} />
+            <Route path='/about' exact component={About} />
+          </Switch>
         </Container>
-        <Switch>
-          <Route path='/' exact component={Home} />
-          <Route path='/contact' exact component={Contact} />
-          <Route path='/about' exact component={About} />
-        </Switch>
       </ThemeProvider>
     </Router>
   )

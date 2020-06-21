@@ -4,12 +4,15 @@ const GlobalStyle = createGlobalStyle`
 
 html {
     width: 100%;
+    height: 100%;
 }
 
 body {
-    font-family: roboto;
-    margin: 0 auto;
-    max-width: 600px;
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    box-sizing: content-box;
 }
 
 `
